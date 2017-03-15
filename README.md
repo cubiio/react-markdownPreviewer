@@ -14,7 +14,7 @@ The _user stories_ are as follows:
 
 - I can see a preview of the output of my markdown that is updated as I type.
 
-A **demo** of the app is available on [here](https://build-cneetxakhr.now.sh/), using [now.sh](https://zeit.co/now).
+A **demo** of the app is available [here](https://build-cneetxakhr.now.sh/), using [now.sh](https://zeit.co/now).
 
 ## Set-up and Run Instructions
 
