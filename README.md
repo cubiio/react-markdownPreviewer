@@ -6,13 +6,15 @@ A simple React.js app which renders markdown input as HTML.
 
 The idea for this project came from Free Code Camp as part of their React projects:
 
-- [FreeCodeCamp](https://www.freecodecamp.com/challenges/build-a-markdown-previewer)
+- [FreeCodeCamp: Build a Markdown Previewer](https://www.freecodecamp.com/challenges/build-a-markdown-previewer)
 
-The user stories are as follows:
+The _user stories_ are as follows:
 
-- User Story: I can type GitHub-flavored Markdown into a text area.
+- I can type GitHub-flavored Markdown into a text area.
 
-- User Story: I can see a preview of the output of my markdown that is updated as I type.
+- I can see a preview of the output of my markdown that is updated as I type.
+
+A **demo** of the app is available on [here](https://build-cneetxakhr.now.sh/), using [now.sh](https://zeit.co/now).
 
 ## Set-up and Run Instructions
 
@@ -30,4 +32,10 @@ Run this command for the React dev server:
 
 ```bash
 $ npm start
+```
+
+Run this command for the React dev server which watches for style (styl / css) updates:
+
+```bash
+$ npm run watch
 ```
