@@ -17,7 +17,7 @@ class MarkdownPreviewer extends React.Component {
   render() {
     return (
       <div>
-        <div dangerouslySetInnerHTML={this.convertMarkdown()} ></div>
+        <div className="area-html" dangerouslySetInnerHTML={this.convertMarkdown()} ></div>
       </div>
     )
   }

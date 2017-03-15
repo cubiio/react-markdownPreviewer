@@ -28,9 +28,11 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        <h1>Markdown Previewer</h1>
-        <textarea name="text" cols="40" rows="40" ref="inputMd" defaultValue={this.state.markdown} onChange={this.updateUserMarkdown}></textarea>
-        <MarkdownPreviewer markdown={this.state.markdown}/>
+        <h1 className="header">Markdown Previewer</h1>
+        <div className="wrapper">
+          <textarea className="area-markdown" name="text" cols="40" rows="35" ref="inputMd" defaultValue={this.state.markdown} onChange={this.updateUserMarkdown}></textarea>
+          <MarkdownPreviewer markdown={this.state.markdown}/>
+        </div>
         <Footer />
       </div>
     )
