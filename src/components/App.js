@@ -1,4 +1,6 @@
 import React from 'react';
+import MarkdownPreviewer from './MarkdownPreview';
+import Footer from './Footer';
 
 import md from '../data/markdown';
 
@@ -7,7 +9,8 @@ class App extends React.Component {
     super();
 
     // bind helpers i.e. allows use of 'this' for custom methods
-    this.updateMdPreviewer = this.updateMdPreviewer.bind(this);
+    this.updateUserMarkdown = this.updateUserMarkdown.bind(this);
+    // this.renderHTML = this.renderHTML.bind(this);
     
     // initial state
     this.state = {
@@ -15,18 +18,20 @@ class App extends React.Component {
     };
   }
 
-  updateMdPreviewer(e) {
-    console.log(e.target.value);
+  updateUserMarkdown(e) {
+    // console.log(e.target.value);
     this.setState( {
-      md: e.target.value
+      markdown: e.target.value
     })
   }
-    
+ 
   render() {
     return (
       <div>
         <h1>Markdown Previewer</h1>
-        <textarea name="text" cols="40" rows="40" ref="inputMd" defaultValue={this.state.markdown} onChange={this.updateMdPreviewer}></textarea>
+        <textarea name="text" cols="40" rows="40" ref="inputMd" defaultValue={this.state.markdown} onChange={this.updateUserMarkdown}></textarea>
+        <MarkdownPreviewer markdown={this.state.markdown}/>
+        <Footer />
       </div>
     )
   }
